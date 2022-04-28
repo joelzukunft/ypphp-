@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+    <title class="colortitle">BiblioSFA</title>
+
+    <!-- ========== Public CSS ========= -->
+    <link href="../public/bootstrap-5.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="../public/lineicons-3.0/icon-font/lineicons.css" rel="stylesheet" />
+
+    <link href="../public/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="../public/datatables-mix/DataTables-1.11.5/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />    
+    <link href="../public/datatables-mix/Buttons-2.2.2/css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="../public/datatables-mix/Responsive-2.2.9/css/responsive.dataTables.min.css" rel="stylesheet" />
+
+    <link href="../public/bootstrap-select-main-b5/dist/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+
+
+
+    <!-- ========== CSS ========= -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+
+  <!-- ############################################################################################################################## -->
+  <!-- ############################################################################################################################## -->
+  <!-- ############################################################################################################################## -->
+
+
+  <body>
+    <!-- ========================================================================================================= -->
+    <!-- =============================================== SIDEBAR  ================================================ -->
+    <!-- ========================================================================================================= -->
+    <aside class="sidebar-nav-wrapper">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="../img/logo/logosfa.svg" alt="logo" />
+        </a>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          
+
+
+          
+          <li class="nav-item">
+            <a href="inicio.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.4166 7.33333C18.9383 7.33333 20.1666 8.56167 20.1666 10.0833V15.5833H16.4999V19.25H5.49992V15.5833H1.83325V10.0833C1.83325 8.56167 3.06159 7.33333 4.58325 7.33333H5.49992V2.75H16.4999V7.33333H17.4166ZM7.33325 4.58333V7.33333H14.6666V4.58333H7.33325ZM14.6666 17.4167V13.75H7.33325V17.4167H14.6666ZM16.4999 13.75H18.3333V10.0833C18.3333 9.57917 17.9208 9.16667 17.4166 9.16667H4.58325C4.07909 9.16667 3.66659 9.57917 3.66659 10.0833V13.75H5.49992V11.9167H16.4999V13.75ZM17.4166 10.5417C17.4166 11.0458 17.0041 11.4583 16.4999 11.4583C15.9958 11.4583 15.5833 11.0458 15.5833 10.5417C15.5833 10.0375 15.9958 9.625 16.4999 9.625C17.0041 9.625 17.4166 10.0375 17.4166 10.5417Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Inicio</span>
+            </a>
+          </li>
+
+
+
+
+          <span class="text"></span>
+
+
+
+
+          <li class="nav-item">
+            <a href="autor.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Autores</span>
+            </a>
+          </li>
+
+
+
+
+
+      
+          <li class="nav-item">
+            <a href="editorial.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Editoriales</span>
+            </a>
+          </li>
+
+
+
+
+
+
+          <li class="nav-item">
+            <a href="materia.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Materias</span>
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+
+          <li class="nav-item">
+            <a href="libro.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Libros</span>
+            </a>
+          </li>
+
+
+
+
+
+
+
+
+          <li class="nav-item">
+            <a href="estudiante.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Estudiantes</span>
+            </a>
+          </li>
+
+
+
+      
+          <br>
+
+
+          <li class="nav-item active">
+            <a href="prestamo.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Prestamos</span>
+            </a>
+          </li>
+
+
+
+          <span class=""></span>
+
+
+
+          <li class="nav-item">
+            <a href="administrador.html">
+              <span class="icon">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.58333 3.66675H17.4167C17.9029 3.66675 18.3692 3.8599 18.713 4.20372C19.0568 4.54754 19.25 5.01385 19.25 5.50008V16.5001C19.25 16.9863 19.0568 17.4526 18.713 17.7964C18.3692 18.1403 17.9029 18.3334 17.4167 18.3334H4.58333C4.0971 18.3334 3.63079 18.1403 3.28697 17.7964C2.94315 17.4526 2.75 16.9863 2.75 16.5001V5.50008C2.75 5.01385 2.94315 4.54754 3.28697 4.20372C3.63079 3.8599 4.0971 3.66675 4.58333 3.66675ZM4.58333 7.33341V11.0001H10.0833V7.33341H4.58333ZM11.9167 7.33341V11.0001H17.4167V7.33341H11.9167ZM4.58333 12.8334V16.5001H10.0833V12.8334H4.58333ZM11.9167 12.8334V16.5001H17.4167V12.8334H11.9167Z"
+                  />
+                </svg>
+              </span>
+              <span class="text">Administrador</span>
+            </a>
+          </li>
+
+          <br>  
+          <br>
+
+        </ul>
+      </nav>
+    </aside>
+
+
+
+
+
+
+
+    <div class="overlay"></div>
+    <!-- ======== sidebar-nav end =========== -->
+
+
+
+
+     
+    <!-- ========================================================================================================= -->
+    <!-- =================================== MAIN ((HEADER, SECTION, FOOTER)) ==================================== -->
+    <!-- ========================================================================================================= -->
+    <main class="main-wrapper">
+      <!-- =============================================== HEADER ================================================ -->
+      <header class="header">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-lg-5 col-md-5 col-6">
+              <div class="header-left d-flex align-items-center">
+                <div class="menu-toggle-btn mr-20">
+                  
+                  <button id="menu-toggle" class="main-btn primary-btn btn-hover">
+                     <== Menu
+                  </button>
+                
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- header-right -->
+            <div class="col-lg-7 col-md-7 col-6">
+              <div class="header-right">
+                <div class="profile-box ml-15">
+                  
+                  <button class="dropdown-toggle  bg-transparent  border-0" type="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="profile-info">
+                      <div class="info">
+                        <h6>Joel Comeca</h6>
+                      </div>
+                    </div>
+                    <i class="lni lni-chevron-down"></i>
+                  </button>
+
+
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                    <li>
+                      <a href="#0"><i class="lni lni-user"></i> View Profile</a>
+                    </li>
+                    
+                    <li>
+                      <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                    </li>
+
+                    <li>
+                      <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+      <!-- ============================================== SECTION =============================================== -->
+      <section class="container-fluid  bg-light px-3">   
+
+
+          <div class="row   bg-light pt-30  ps-1">
+            <div class="col-md-6">
+              <div class="mb-10">             
+                <h4 class="text-dark">Prestamo / Devolución</h4>    
+             </div>
+           </div>
+          </div>
+
+
+
+
+
+      
+          <div class="row ">
+            <div class="col-lg col-md col-xs col-sm col-xl col xxl">
+              <div class="shadow-lg p-2 mb-3 mt-3 bg-body rounded">
+
+
+                <div class="">   
+                  <button class="btn btn-success" id="btnagregar" onclick="mostrarform(true)">
+                    <i class="fa fa-plus-circle"></i> Prestar
+                  </button>
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="table-responsive " id="listadoregistros">
+                  <table id="tbllistado" class="table     table-striped     table-bordered     table-condensed     table-hover">
+                    <thead>
+                      <th>Opciones</th>
+                      <th>Libro</th>
+                      <th>Estudiante</th>
+                      <th>Fecha Prestamo</th>
+                      <th>Fecha Devolución</th>
+                      <th>Cantidad</th>
+                      <th>Observación</th>
+                      <th>Condición</th>
+                    </thead>
+                  </table>
+                </div>
+
+
+
+
+
+                <div class="panel-body" id="formularioregistros">
+                  <form class="row" name="formulario" id="formulario" method="POST">
+
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <br>
+                      <label>Libro:</label>
+                      <input type="hidden" name="idprestamo" id="idprestamo">
+                      <select type="text" name="idlibro" id="idlibro" class="form-control selectpicker" data-live-search="true" required></select>
+                      <input type="hidden" name="idarticulo" id="idarticulo">
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <br>
+                      <label>Estudiante:</label>
+                      <select id="idestudiante" name="idestudiante" class="form-control selectpicker" data-live-search="true" required></select>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+                      <br>
+                      <label>Fecha Prestamo:</label>
+                      <input type="date" name="fecha_prestamo" id="fecha_prestamo" class="form-control" placeholder="Fecha Prestamo" required>
+                    </div>
+
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <br>
+                      <label>Fecha Devolución:</label>
+                      <input type="date" name="fecha_devolucion" id="fecha_devolucion" class="form-control" placeholder="Fecha Devolución" required>
+                    </div>
+                    
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <br>
+                      <label>Cantidad:</label>
+                      <input type="number" name="cantidad" id="cantidad" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <br>
+                      <label>Observación:</label>
+                      <input type="text" class="form-control" name="observacion" id="observacion" maxlength="200" placeholder="Observación">
+                    </div>
+                    
+                    <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <br>
+                      <button class="btn btn-primary" type="submit" id="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
+                      <button id="btnCancelar" class="btn btn-danger" onclick="cancelarform()" type="button"><i class="fa fa-arrow-circle-left"></i> Cancelar</button>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+
+
+
+
+
+
+      
+      <!-- ============================================== FOOTER =============================================== -->
+
+    </main>
+  
+  </body>
+</html>
+
+
+
+
+
+  <!-- ======================== Public Javascript ======================== -->
+  <script src="../public/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+  <script src="../public/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../public/datatables-mix/DataTables-1.11.5/js/jquery.dataTables.min.js"></script>    
+  <script src="../public/datatables-mix/Buttons-2.2.2/js/dataTables.buttons.min.js"></script>
+  <script src="../public/datatables-mix/Buttons-2.2.2/js/buttons.html5.min.js"></script>
+  <script src="../public/datatables-mix/Buttons-2.2.2/js/buttons.colVis.min.js"></script>
+  <script src="../public/datatables-mix/JSZip-2.5.0/jszip.min.js"></script>
+  <script src="../public/datatables-mix/pdfmake-0.1.36/pdfmake.min.js"></script>
+  <script src="../public/datatables-mix/pdfmake-0.1.36/vfs_fonts.js"></script>
+
+  <script src="../public/bootstrap-select-main-b5/js/bootstrap-select.js"></script>
+ 
+    
+
+    
+  <!-- ============================= Javascript =========================== -->
+  <script src="../js/main.js"></script>
+  <script type="text/javascript" src="../js/prestamo.js"></script>
+
